@@ -3,7 +3,27 @@
 @tailwind utilities;
 
 *{
+    background-color: #111827;
+    color: #f3f4f6;
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and older Edge */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@layer utilities {
+  .text-primary{
+    @apply text-[#f3f4f6]
+  }
+  .text-secondary{
+    @apply text-[#9ca3af]
+  }
+  .border-primary{
+    @apply rounded-md border border-[#4b5563]
+  }
 }

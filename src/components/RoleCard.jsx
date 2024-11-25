@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PermissionModal from "./PermissionModal";
 
 const RoleCard = ({roles, setRoles, role, users, setUsers}) => {
     const [permissionModal, setPermissionModal] = useState(false);

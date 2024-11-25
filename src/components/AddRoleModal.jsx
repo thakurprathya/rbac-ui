@@ -16,8 +16,8 @@ const AddRoleModal = ({roles, setRoles, setAddRoleModal}) => {
     };
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center">
-            <div className="bg-gray-700 p-5 md:p-7 rounded-lg mt-[20rem]">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div className="bg-gray-700 p-5 md:p-7 rounded-lg">
                 <h2 className="bg-gray-700 text-primary text-lg md:text-2xl mb-3">Add New Role</h2>
                 <input
                     type="text"

@@ -48,8 +48,8 @@ const UserModal = ({ roles, setRoles, users, setUsers, setUserModal, user, setEd
     };
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-start justify-center">
-            <div className="bg-gray-700 p-5 md:p-7 rounded-lg mt-[15rem]">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+            <div className="bg-gray-700 p-5 md:p-7 rounded-lg">
                 <h2 className="bg-gray-700 text-primary text-lg md:text-2xl mb-3">
                     {user ? 'Edit User' : 'Add New User'}
                 </h2>

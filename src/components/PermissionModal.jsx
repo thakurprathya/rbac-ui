@@ -27,8 +27,8 @@ const PermissionModal = ({roles, setRoles, role, setPermissionModal}) => {
     
 
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-start">
-            <div className="bg-gray-700 p-6 rounded-md shadow-lg mt-[20rem]">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+            <div className="bg-gray-700 p-6 rounded-md shadow-lg">
                 <h3 className="bg-gray-700 text-lg md:text-2xl mb-4">Set Permissions for {capitalize(role.role)}</h3>
                 <div className="bg-gray-900 p-3 flex items-center justify-between rounded-md w-full md:w-[300px] mx-auto mb-4">
                     <label className="bg-gray-900 cursor-pointer flex items-center gap-1 md:gap-2 text-sm md:text-md">

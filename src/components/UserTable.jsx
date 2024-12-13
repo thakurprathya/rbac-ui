@@ -68,8 +68,8 @@ const UserTable = ({ roles, setRoles, users, setUsers }) => {
                                         <td className="px-6 py-4 text-center">{user?.email}</td>
                                         <td className="px-6 py-4 text-center">{capitalize(user?.role)}</td>
                                         <td className="px-6 py-4 text-center">{user?.onLeave ? "Yes" : "No"}</td>
-                                        <td className="text-center flex justify-center items-center gap-1">
-                                            <button className="p-2 rounded-sm my-2" onClick={()=>{
+                                        <td className="text-center flex items-center justify-center gap-5 py-5 md:py-4">
+                                            <button className="rounded-sm" onClick={()=>{
                                                 setEditUser(user);
                                                 setUserModal(true);
                                             }}>
@@ -78,7 +78,7 @@ const UserTable = ({ roles, setRoles, users, setUsers }) => {
                                                     <path d="M18.5 2.5a2.121 2.121 0 013 3L12 15l-4 1 1-4 9.5-9.5z" />
                                                 </svg>
                                             </button>
-                                            <button className="p-2 rounded-sm my-2" onClick={()=>HandleDeleteUser(user)}>
+                                            <button className="rounded-sm" onClick={()=>HandleDeleteUser(user)}>
                                                 <svg viewBox="0 0 24 24" fill="currentColor" className="fill-red-600 md:fill-red-500 hover:fill-red-600 w-[14px] md:w-5">
                                                     <path fill="none" d="M0 0h24v24H0z" />
                                                     <path d="M4 8h16v13a1 1 0 01-1 1H5a1 1 0 01-1-1V8zm3-3V3a1 1 0 011-1h8a1 1 0 011 1v2h5v2H2V5h5zm2-1v1h6V4H9zm0 8v6h2v-6H9zm4 0v6h2v-6h-2z" />
